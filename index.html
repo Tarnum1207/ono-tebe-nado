@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <header class="header" id="header">
     <nav class="header__menu_left">
         <ul class="header__links-list">
-            <li class="header__links-list-item">
+            <li class="header__links-list-item header__links-list-item_no-bullit header__links-list-item_active">
                 <a class="header__link" href="#header">главная</a>
             </li>
             <li class="header__links-list-item">
@@ -23,9 +24,10 @@
             </li>
         </ul>
     </nav>
-    <a class="header__logo-image">
+    <a class="header__logo">
         <img src="images/logo-black.svg"
              alt="Логотип"
+             class="header__logo-image"
         >
     </a>
     <address class="header__menu_right">
@@ -63,39 +65,45 @@
             Лоты
         </h2>
         <ul class="lots__card-list">
-            <li class="card card_first">
-                <a class="card__title" href="#0">
-                    Фильм режиссёра, который бросил киношколу
+            <li>
+                <a class="card card_first" href="#0">
+                    <article class="card__title">
+                        Фильм режиссёра, который бросил киношколу
+                    </article>
+                    <h3 class="card-text">
+                        Не просто бросил, а ушёл с первой лекции.
+                        Какой была бы ваша ставка, если бы вы не знали, что режиссёр
+                        — Пол Томас Андерсон?
+                    </h3>
                 </a>
-                <p class="card-text">
-                    Не просто бросил, а ушёл с первой лекции.
-                    Какой была бы ваша ставка, если бы вы не знали, что режиссёр
-                    — Пол Томас Андерсон?
-                </p>
             </li>
-            <li class="card card_center">
-                <a class="card__title" href="#0">
-                    Книга, где описан один скучный день из жизни рекламного агента
+            <li>
+                <a class="card card_center" href="#0">
+                    <article class="card__title">
+                        Книга, где описан один скучный день из жизни рекламного агента
+                    </article>
+                    <h4 class="card-text">
+                        Объёмом почти в тысячу страниц. Иногда без знаков
+                        препинания и с переходами на древнеанглийский. В ней
+                        одновременно рассказывается о 16 июня 1904 года и об
+                        истории литературы, начиная с античных времён. И это
+                        всё накладывается на эпическую поэму Гомера. Сколько
+                        бы вы поставили на «Улисса» Джеймса Джойса?
+                    </h4>
                 </a>
-                <p class="card-text">
-                    Объёмом почти в тысячу страниц. Иногда без знаков
-                    препинания и с переходами на древнеанглийский. В ней
-                    одновременно рассказывается о 16 июня 1904 года и об
-                    истории литературы, начиная с античных времён. И это
-                    всё накладывается на эпическую поэму Гомера. Сколько
-                    бы вы поставили на «Улисса» Джеймса Джойса?
-                </p>
             </li>
-            <li class="card card_right">
-                <a class="card__title" href="#0">
-                    Картина, которую повторит даже 5-летний сын маминой подруги
+            <li>
+                <a class="card card_right" href="#0">
+                    <article class="card__title">
+                        Картина, которую повторит даже 5-летний сын маминой подруги
+                    </article>
+                    <h5 class="card-text">
+                        Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                        что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                        котиков… Сколько бы вы на такое поставили, если бы не знали,
+                        что это — одна из революционных работ Кандинского?
+                    </h5>
                 </a>
-                <p class="card-text">
-                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                    котиков… Сколько бы вы на такое поставили, если бы не знали,
-                    что это — одна из революционных работ Кандинского?
-                </p>
             </li>
         </ul>
         <a class="lots__look-more-link" href="#0">посмотреть больше</a>
@@ -109,9 +117,9 @@
             >
         </div>
         <div class="about__containers">
-            <h3 class="about__title">
+            <h2 class="about__title">
                 Об аукционе
-            </h3>
+            </h2>
             <div class="about__column">
                 <p class="about__text">
                     Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата.
@@ -148,7 +156,7 @@
     </address>
     <nav class="footer__menu">
         <ul class="footer__menu-list">
-            <li class="footer__links-list-item">
+            <li class="footer__links-list-item footer__links-list-item_active">
                 <a class="footer__link" href="#header">главная</a>
             </li>
             <li class="footer__links-list-item">
@@ -161,25 +169,31 @@
     </nav>
     <ul class="footer__images">
         <li class="footer__images-item">
-            <img
-                    src="images/yt.svg"
-                    alt="Ссылки"
-                    class="footer__social-icon"
-            >
+            <a href="#0">
+                <img
+                        src="images/yt.svg"
+                        alt="Ссылки"
+                        class="footer__social-icon"
+                >
+            </a>
         </li>
         <li class="footer__images-item">
-            <img
-                    src="images/vk.svg"
-                    alt="Ссылки"
-                    class="footer__social-icon"
-            >
+            <a href="#0">
+                <img
+                        src="images/vk.svg"
+                        alt="Ссылки"
+                        class="footer__social-icon"
+                >
+            </a>
         </li>
         <li class="footer__images-item">
-            <img
-                    src="images/pinterest.svg"
-                    alt="Ссылки"
-                    class="footer__social-icon"
-            >
+            <a href="#0">
+                <img
+                        src="images/pinterest.svg"
+                        alt="Ссылки"
+                        class="footer__social-icon"
+                >
+            </a>
         </li>
     </ul>
 </footer>
